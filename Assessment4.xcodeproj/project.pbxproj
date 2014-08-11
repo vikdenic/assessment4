@@ -21,6 +21,9 @@
 		93CD77D21999604D00D27E0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CD77B41999604D00D27E0A /* UIKit.framework */; };
 		93CD77DA1999604D00D27E0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93CD77D81999604D00D27E0A /* InfoPlist.strings */; };
 		93CD77DC1999604D00D27E0A /* Assessment4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD77DB1999604D00D27E0A /* Assessment4Tests.m */; };
+		93CD77E7199962E900D27E0A /* DogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD77E6199962E900D27E0A /* DogsViewController.m */; };
+		93CD77EA1999642A00D27E0A /* AddDogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD77E91999642A00D27E0A /* AddDogViewController.m */; };
+		93CD77ED199964A100D27E0A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93CD77EB199964A100D27E0A /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		93CD77D71999604D00D27E0A /* Assessment4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assessment4Tests-Info.plist"; sourceTree = "<group>"; };
 		93CD77D91999604D00D27E0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93CD77DB1999604D00D27E0A /* Assessment4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assessment4Tests.m; sourceTree = "<group>"; };
+		93CD77E5199962E900D27E0A /* DogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DogsViewController.h; sourceTree = "<group>"; };
+		93CD77E6199962E900D27E0A /* DogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DogsViewController.m; sourceTree = "<group>"; };
+		93CD77E81999642A00D27E0A /* AddDogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDogViewController.h; sourceTree = "<group>"; };
+		93CD77E91999642A00D27E0A /* AddDogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDogViewController.m; sourceTree = "<group>"; };
+		93CD77EC199964A100D27E0A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +125,12 @@
 				93CD77C21999604D00D27E0A /* Main.storyboard */,
 				93CD77C51999604D00D27E0A /* ViewController.h */,
 				93CD77C61999604D00D27E0A /* ViewController.m */,
+				93CD77E5199962E900D27E0A /* DogsViewController.h */,
+				93CD77E6199962E900D27E0A /* DogsViewController.m */,
+				93CD77E81999642A00D27E0A /* AddDogViewController.h */,
+				93CD77E91999642A00D27E0A /* AddDogViewController.m */,
 				93CD77C81999604D00D27E0A /* Images.xcassets */,
+				93CD77EB199964A100D27E0A /* Model.xcdatamodeld */,
 				93CD77B71999604D00D27E0A /* Supporting Files */,
 			);
 			path = Assessment4;
@@ -252,6 +265,9 @@
 				93CD77C71999604D00D27E0A /* ViewController.m in Sources */,
 				93CD77C11999604D00D27E0A /* AppDelegate.m in Sources */,
 				93CD77BD1999604D00D27E0A /* main.m in Sources */,
+				93CD77EA1999642A00D27E0A /* AddDogViewController.m in Sources */,
+				93CD77E7199962E900D27E0A /* DogsViewController.m in Sources */,
+				93CD77ED199964A100D27E0A /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +482,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93CD77EB199964A100D27E0A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93CD77EC199964A100D27E0A /* Model.xcdatamodel */,
+			);
+			currentVersion = 93CD77EC199964A100D27E0A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 93CD77A51999604D00D27E0A /* Project object */;
 }

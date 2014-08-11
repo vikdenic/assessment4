@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
 @end
 
@@ -17,13 +19,47 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.title = @"Dog Owners";
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - UITableView Delegate Methods
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    //TODO: UPDATE THIS ACCORDINGLY
+    return 1;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
+    //TODO: UPDATE THIS ACCORDINGLY
+    return cell;
+}
+
+#pragma mark - UIAlertView Methods
+
+//METHOD FOR PRESENTING ALERT VIEW WITH TEXT FIELD FOR USER TO ENTER NEW PERSON
+- (IBAction)onAddButtonTapped:(UIBarButtonItem *)sender
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Add a Person"
+                                                    message:nil
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancel"
+                                          otherButtonTitles:@"Add", nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    UITextField *alertTextField = [alert textFieldAtIndex:0];
+    alertTextField.keyboardType = UIKeyboardTypeDefault;
+
+    [alert show];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex != alertView.cancelButtonIndex)
+    {
+        //TODO: ADD YOUR CODE HERE FOR WHEN USER ADDS NEW PERSON
+    }
 }
 
 @end
