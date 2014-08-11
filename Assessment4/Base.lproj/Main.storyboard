@@ -42,6 +42,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Khf-zn-hBE">
+                        <barButtonItem key="leftBarButtonItem" title="Color" id="cx4-dG-u3v">
+                            <connections>
+                                <action selector="onColorButtonTapped:" destination="vXZ-lx-hvc" id="Fcv-s9-Bi7"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fQY-8c-QOZ">
                             <connections>
                                 <action selector="onAddButtonTapped:" destination="vXZ-lx-hvc" id="VTN-pB-V15"/>
